@@ -43,8 +43,8 @@ body{
 main{
     background-color: var(--clr-Dark-desaturated-blue);
     flex-direction: row-reverse;
-    max-width: 900px;
-    gap: 1rem;
+    max-width: 1020px;
+    gap: 2rem;
     border-radius: .3rem;
     margin: 1.5rem;
     overflow: hidden;
@@ -64,7 +64,7 @@ main{
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: var(--fw-bold);
 }
 .insights{
@@ -75,7 +75,7 @@ h1{
     color: var(--clr-Slightly-transparent-white);
     font-family: var(--ff-inter);
     line-height: 1.3;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .stats{
@@ -88,7 +88,7 @@ h1{
 }
 
 .stat{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: var(--fw-bold);
 }
 
@@ -101,7 +101,7 @@ h1{
 .img{
     background-color: var(--clr-Soft-violet);
     padding: 0;
-    flex: 1.3;
+    flex: 1.4;
 }
 
 .img img{
