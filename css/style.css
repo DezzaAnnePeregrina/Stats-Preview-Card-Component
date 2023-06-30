@@ -1,0 +1,142 @@
+:root{
+/* Colors */
+    /* Primary */
+    --clr-Very-dark-blue: hsl(233, 47%, 7%); /*(main background) */
+    --clr-Dark-desaturated-blue: hsl(244, 38%, 16%); /*(card background)*/
+    --clr-Soft-violet: hsl(277, 64%, 61%); /*(accent)*/
+
+    /*Neutral*/
+    --clr-White: hsl(0, 0%, 100%); /*(main heading, stats)*/
+    --clr-Slightly-transparent-white: hsla(0, 0%, 100%, 0.75); /*(main paragraph)*/
+    --clr-Slightly-transparent-white-stat: hsla(0, 0%, 100%, 0.6); /*(stat headings)*/
+
+
+/* Typography */
+    /* Body Copy */
+    --fs: 15px;
+
+     /* Font */
+    --ff-inter: 'Inter', sans-serif;
+    --fw-light: 400;
+    --fw-bold: 700;
+    --ff-Lexend-Deca:'Lexend Deca', sans-serif;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--clr-Very-dark-blue);
+    font-size: var(--fs);
+    color: var(--clr-White);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.flex{
+    display: flex;
+}
+
+main{
+    background-color: var(--clr-Dark-desaturated-blue);
+    flex-direction: row-reverse;
+    max-width: 900px;
+    gap: 1rem;
+    border-radius: .3rem;
+    margin: 1.5rem;
+    overflow: hidden;
+}
+
+.info{
+    flex-direction: column;
+    flex: 1;
+    margin: 3rem;
+    justify-content: space-between;
+    font-family: var(--ff-inter);
+}
+
+.titleInfo{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+}
+.insights{
+    color: var(--clr-Soft-violet);
+}
+
+.paragraph{
+    color: var(--clr-Slightly-transparent-white);
+    line-height: 1.3;
+    font-size: 1rem;
+}
+
+.stats{
+    justify-content: space-between;
+    font-family: var(--ff-inter);
+}
+
+.stats div{
+    line-height: 1.5;
+}
+
+.stat{
+    font-size: 1rem;
+    font-weight: var(--fw-bold);
+}
+
+.details{
+    color: var(--clr-Slightly-transparent-white-stat);
+    font-family: var(--ff-inter);
+    font-size: .9rem;
+}
+
+.img{
+    background-color: var(--clr-Soft-violet);
+    padding: 0;
+    flex: 1.3;
+}
+
+.img img{
+    opacity: 0.5;
+    width: 100%;
+    display: block;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 500px) {
+    main{
+        flex-direction: column;
+    }
+
+    .info{
+        margin: 1.2rem;
+        text-align: center;
+        gap: 2.3rem;
+    }
+
+    .titleInfo{
+        gap: 1rem;
+    }
+
+    .info h1{
+        font-size: 1.5rem;
+    }
+
+    .paragraph{
+        text-align: center;
+    }
+
+    .stats{
+        gap: 1rem;
+        flex-direction: column;
+    }
+}
